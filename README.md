@@ -11,8 +11,8 @@ Telegram bot that adapts a kanban board to a chat. Has the ability to create, mo
 - Deploy: Docker
 
 ### To-Do:
-[ ] Create board endpoint
-[ ] Create task endpoint
-[ ] Update task endpoint
-[ ] Get one/meny task(s) endpoint
-[ ] Delete task endpoint
+[ ] Create board endpoint<br>
+[ ] Create task endpoint<br>
+[ ] Update task endpoint<br>
+[ ] Get one/meny task(s) endpoint<br>
+[ ] Delete task endpoint<br>
