@@ -7,3 +7,6 @@ local-migrate-down:
 
 local-docker-up:
 	docker compose -f ./deploy/local/docker-compose.yml up
+
+git-sync:
+	git fetch --all -Pp
