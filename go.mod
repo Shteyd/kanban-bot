@@ -4,6 +4,7 @@ go 1.20
 
 require (
 	github.com/go-pg/pg v8.0.7+incompatible
+	github.com/pkg/errors v0.9.1
 	github.com/spf13/viper v1.15.0
 )
 
@@ -29,6 +30,7 @@ require (
 )
 
 require (
+	github.com/google/uuid v1.3.0
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	go.uber.org/zap v1.24.0
 	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa // indirect

@@ -12,6 +12,9 @@ CREATE TABLE "board" (
     "article" VARCHAR(5) NOT NULL,
     "description" TEXT,
     "customer_id" UUID NOT NULL,
+    "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    "deleted_at" TIMESTAMPTZ,
 
     PRIMARY KEY ("id"),
     FOREIGN KEY ("customer_id") REFERENCES "customer" ("id")
@@ -23,6 +26,9 @@ CREATE TABLE "task" (
     "name" VARCHAR(255) NOT NULL,
     "description" TEXT,
     "board_id" UUID NOT NULL,
+    "created_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    "updated_at" TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    "deleted_at" TIMESTAMPTZ,
 
     PRIMARY KEY ("id"),
     FOREIGN KEY ("board_id") REFERENCES "board" ("id")
